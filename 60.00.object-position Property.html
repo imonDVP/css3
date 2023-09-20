@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS The object-position Property</title>
+    <!-- The CSS object-position property is used to specify how an <img> or <video> should be positioned within its container. -->
+    <style>
+        #object-fit {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        #object-position {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            object-position: 90% 100%;
+        }
+
+        #object-position1 {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            object-position: 5% 100%;
+        }
+    </style>
+</head>
+<body>
+    <h2>Using object-fit: cover</h2>
+    <img id="object-fit" src="bird400by300.jpg" alt="Paris" width="400" height="300">
+    <hr>
+    <p>Here we will use the object-position property to position the image so that the great old building is in center:
+    </p>
+    <img id="object-position" src="bird400by300.jpg" alt="Paris" width="400" height="300">
+    <hr>
+    <p>Here we will use the object-position property to position the image so that the famous Eiffel Tower is in center:
+    </p>
+    <img id="object-position1" src="bird400by300.jpg" alt="Paris" width="400" height="300">
+</body>
+</html>

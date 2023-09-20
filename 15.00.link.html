@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>link</title>
+    <style>
+        /* unvisited link/a:link - a normal, unvisited link */
+        a:link {
+            color: green;
+            text-decoration: none;
+            text-align: center;
+            background-color: yellow;
+            padding: 14px 25px;
+            text-align: center;
+            display: inline-block;
+            border: 2px solid rgb(221, 21, 178);
+        }
+
+        /* visited link */
+        a:visited {
+            color: green;
+            text-decoration: none;
+            text-align: center;
+            background-color: yellow;
+            padding: 14px 25px;
+            text-align: center;
+            display: inline-block;
+            border: 2px solid rgb(221, 21, 178);
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: hotpink;
+            text-decoration: underline;
+            background-color: cyan;
+        }
+
+        /* selected link/a:active - a link the moment it is clicked */
+        a:active {
+            color: blue;
+            text-decoration: underline;
+            background-color: hotpink;
+        }
+
+        /* When setting the style for several link states, there are some order rules:a:hover MUST come after a:link and a:visited/a:active MUST come after a:hover */
+    </style>
+</head>
+<body>
+    <p><b><a href="https://dequeuniversity.com/" target="_blank">This is a link</a></b></p>
+</body>
+</html>

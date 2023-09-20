@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS box-shadow Property</title>
+    <style>
+        /* Specify a Horizontal and a Vertical Shadow */
+        div {
+            width: 300px;
+            height: 100px;
+            padding: 15px;
+            background-color: coral;
+            /* Specify a horizontal and a vertical shadow */
+            box-shadow: 10px 10px;
+            /* The color parameter defines the color of the shadow. */
+            box-shadow: 10px 10px lightblue;
+            /* The blur parameter defines the blur radius. The higher the number, the more blurred the shadow will be */
+            box-shadow: 10px 10px 5px lightblue;
+            /* The spread parameter defines the spread radius. A positive value increases the size of the shadow, a negative value decreases the size of the shadow. */
+            box-shadow: 10px 10px 5px 12px lightblue;
+            /* The inset parameter changes the shadow from an outer shadow (outset) to an inner shadow. */
+            box-shadow: 10px 10px 5px lightblue inset;
+            /* An element can also have multiple shadows */
+            box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+            /* Multiple shadows with blur effect */
+            box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
+        }
+    </style>
+</head>
+<body>
+    <div>This is a div element with a box-shadow</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #borderimg {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url(spring.jpg) 60 round;
+        }
+
+        #borderimg1 {
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url(spring.jpg) 60 stretch;
+        }
+    </style>
+</head>
+<body>
+    <p id="borderimg">border-image: url(border.png) 60 round;</p>
+    <p>Here is the original image:</p><img src="spring.jpg" style="height: 200px; width: 200px;">
+    <hr style="border: 2px solid red">
+    <p id="borderimg1">border-image: url(border.png) 60 stretch;</p>
+
+</body>
+</html>

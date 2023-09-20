@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Use the opacity property to add transparency to a button (creates a "disabled" look). -->
+
+    <!-- Tip: You can also add the cursor property with a value of "not-allowed", which will display a "no parking sign" when you mouse over the button: -->
+    <style>
+        .button {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <button class="button">Normal Button</button>
+    <button class="button disabled">Disabled Button</button>
+</body>
+</html>

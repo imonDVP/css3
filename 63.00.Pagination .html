@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Pagination</title>
+    <style>
+        /* Highlight the current page with an .active class, and use the :hover selector to change the color of each page link when moving the mouse over them: */
+        .pagination {
+            display: inline-block;
+        }
+
+        .pagination a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        /* Highlight the current page with an .active class, and use the :hover selector to change the color of each page link when moving the mouse over them: */
+        .pagination {
+            display: inline-block;
+        }
+
+        .Hpagination a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        .Hpagination a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .Hpagination a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+        /* Add the border-radius property if you want a rounded "active" and "hover" button: */
+        .Rpagination {
+            display: inline-block;
+        }
+
+        .Rpagination a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        .Rpagination a.active {
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .Rpagination a:hover:not(.active) {
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+
+        /* Add the transition property to the page links to create a transition effect on hover: */
+        .pagination {
+            display: inline-block;
+        }
+
+        .Tpagination a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+        }
+
+        .Tpagination a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .Tpagination a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+        /* Use the border property to add borders to the pagination: */
+        .Bpagination {
+            display: inline-block;
+        }
+
+        .Bpagination a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+            border: 1px solid #ddd;
+        }
+
+        .Bpagination a.active {
+            background-color: #4CAF50;
+            color: white;
+            border: 1px solid #4CAF50;
+        }
+
+        .Bpagination a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+        /* Add rounded borders to your first and last link in the pagination: */
+        .RBpagination {
+            display: inline-block;
+        }
+
+        .RBpagination a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            border: 1px solid #ddd;
+        }
+
+        .RBpagination a.active {
+            background-color: #4CAF50;
+            color: white;
+            border: 1px solid #4CAF50;
+        }
+
+        .RBpagination a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+        .RBpagination a:first-child {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        .RBpagination a:last-child {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        /* Add the margin property if you do not want to group the page links: */
+        .SLpagination {
+            display: inline-block;
+        }
+
+        .SLpagination a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+            border: 1px solid #ddd;
+            margin: 0 4px;
+        }
+
+        .SLpagination a.active {
+            background-color: #4CAF50;
+            color: white;
+            border: 1px solid #4CAF50;
+        }
+
+        .SLpagination a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+        /* Change the size of the pagination with the font-size property: */
+        .SFpagination {
+            display: inline-block;
+        }
+
+        .SFpagination a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+            border: 1px solid #ddd;
+            font-size: 22px;
+        }
+
+        .SFpagination a.active {
+            background-color: #4CAF50;
+            color: white;
+            border: 1px solid #4CAF50;
+        }
+
+        .SFpagination a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+        /* To center the pagination, wrap a container element (like <div>) around it with text-align:center */
+        .center {
+            text-align: center;
+        }
+
+        .Cpagination {
+            display: inline-block;
+        }
+
+        .Cpagination a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+            border: 1px solid #ddd;
+            margin: 0 4px;
+        }
+
+        .Cpagination a.active {
+            background-color: #4CAF50;
+            color: white;
+            border: 1px solid #4CAF50;
+        }
+
+        .Cpagination a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+        /* More Examples */
+        body {
+            background-color: white;
+        }
+
+        .PNpagination {
+            display: inline-block;
+        }
+
+        .PNpagination a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+            border: 1px solid #ddd;
+        }
+
+        .PNpagination a.active {
+            background-color: #4CAF50;
+            color: white;
+            border: 1px solid #4CAF50;
+        }
+
+        .PNpagination a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+        /* Another variation of pagination is so-called "breadcrumbs": */
+        ul.breadcrumb {
+            padding: 8px 16px;
+            list-style: none;
+            background-color: #eee;
+        }
+
+        ul.breadcrumb li {
+            display: inline;
+        }
+
+        ul.breadcrumb li+li:before {
+            padding: 8px;
+            color: black;
+            content: "/\00a0";
+        }
+
+        ul.breadcrumb li a {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h2>Simple Pagination</h2>
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+    <br>
+    <h2>Move the mouse over the numbers.</h2>
+    <div class="Hpagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a class="active" href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+    <br>
+    <h2>Rounded Active and Hover Buttons</h2>
+    <div class="Rpagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#" class="active">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+    <br>
+    <h2>Transition Effect on Hover</h2>
+    <div class="Tpagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#" class="active">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+    <br>
+    <h2>Pagination with Borders</h2>
+    <div class="Bpagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#" class="active">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+    <br>
+    <h2>Pagination with Rounded Borders</h2>
+    <div class="RBpagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a class="active" href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+    <br>
+    <h2>Pagination with Margins</h2>
+    <div class="SLpagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#" class="active">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div><br>
+    <h2>Change the font-size property to make the pagination smaller or bigger.</h2>
+    <div class="SFpagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#" class="active">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+    <br>
+    <h2>Centered Pagination</h2>
+    <div class="center">
+        <div class="Cpagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+        </div>
+    </div>
+    <br>
+    <p>Next/Previous buttons:</p>
+    <div class="PNpagination">
+        <a href="#">❮</a>
+        <a href="#">❯</a>
+    </div>
+    <br>
+    <p>Navigation pagination:</p>
+    <div class="PNpagination">
+        <a href="#" class="active">Home</a>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
+    <br>
+    <h2>Breadcrumb Pagination</h2>
+    <ul class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Pictures</a></li>
+        <li><a href="#">Summer 15</a></li>
+        <li>Italy</li>
+    </ul>
+</body>
+</html>

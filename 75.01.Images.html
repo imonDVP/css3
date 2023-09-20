@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using The max-width Property</title>
+    <!-- If the max-width property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its original size: -->
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <img src="sea1.jpg" width="460" height="345">
+    <p>Resize the browser window to see how the image will scale when the width is less than 460px.</p>
+</body>
+</html>

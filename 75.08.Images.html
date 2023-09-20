@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The HTML <picture> Element</title>
+    <!-- The HTML <picture> element gives web developers more flexibility in specifying image resources. -->
+
+    <!-- The most common use of the <picture> element will be for images used in responsive designs. Instead of having one image that is scaled up or down based on the viewport width, multiple images can be designed to more nicely fill the browser viewport. -->
+    <!-- The <picture> element works similar to the <video> and <audio> elements. You set up different sources, and the first source that fits the preferences is the one being used: -->
+</head>
+<body>
+    <picture>
+        <source srcset="bird2.jpg" media="(max-width: 400px)">
+        <source srcset="river.jpg">
+        <img src="wall6.jpg" alt="Flowers" style="width:auto;">
+    </picture>
+    <p>Resize the browser width and the background image will change at 400px.</p>
+</body>
+</html>

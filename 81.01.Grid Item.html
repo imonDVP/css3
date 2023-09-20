@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The grid-column Property:</title>
+    <!-- Child Elements (Items):
+    A grid container contains grid items. -->
+    <!-- By default, a container has one grid item for each column, in each row, but you can style the grid items so that they will span multiple columns and/or rows. -->
+    <!-- The grid-column property defines on which column(s) to place an item. -->
+    <!-- You define where the item will start, and where the item will end. -->
+    <!-- Note: The grid-column property is a shorthand property for the grid-column-start and the grid-column-end properties. -->
+    <!-- To place an item, you can refer to line numbers, or use the keyword "span" to define how many columns the item will span. -->
+    <style>
+        /* Make "item1" start on column 1 and end before column 5: */
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        .item1 {
+            grid-column: 1 / 5;
+        }
+    </style>
+</head>
+<body>
+    <h1>The grid-column Property</h1>
+    <p>Use the <em>grid-column</em> property to specify where to place an item.</p>
+    <p>Item1 will start on column 1 and end before column 5:</p>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+        <div class="item10">10</div>
+        <div class="item11">11</div>
+        <div class="item12">12</div>
+        <div class="item13">13</div>
+        <div class="item14">14</div>
+        <div class="item15">15</div>
+    </div>
+</body>
+</html>

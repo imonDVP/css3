@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The ::first-line Pseudo-element</title>
+    <style>
+        p::first-line {
+            /* The ::first-line pseudo-element can only be applied to block-level elements. */
+            color: #ff0000;
+            font-variant: small-caps;
+        }
+
+        p::first-letter {
+            color: #ff0000;
+            font-size: xx-large;
+        }
+
+        p.intro::first-letter {
+            color: #ff0000;
+            font-size: 200%;
+        }
+    </style>
+</head>
+<body>
+    <p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text.
+        And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and
+        more, and more.</p>
+    <p class="intro">This is an introduction.</p>
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Element (Container)</title>
+    <style>
+        /* The flex container becomes flexible by setting the display property to flex: */
+        .flex-container {
+            display: flex;
+            background-color: DodgerBlue;
+        }
+
+        .flex-container>div {
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+
+        /* The column value stacks the flex items vertically (from top to bottom): */
+        .Vflex-container {
+            display: flex;
+            flex-direction: column;
+            background-color: DodgerBlue;
+        }
+
+        .Vflex-container>div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+        /* The column-reverse value stacks the flex items vertically (but from bottom to top): */
+        .BTflex-container {
+            display: flex;
+            flex-direction: column-reverse;
+            background-color: DodgerBlue;
+        }
+
+        .BTflex-container>div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+        /* The row value stacks the flex items horizontally (from left to right): */
+        .LRflex-container {
+            display: flex;
+            flex-direction: row;
+            background-color: DodgerBlue;
+        }
+
+        .LRflex-container>div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+        /* The row-reverse value stacks the flex items horizontally (but from right to left): */
+        .RLflex-container {
+            display: flex;
+            flex-direction: row-reverse;
+            background-color: DodgerBlue;
+        }
+
+        .RLflex-container>div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+        /* The flex-wrap property specifies whether the flex items should wrap or not. */
+        /* The examples below have 12 flex items, to better demonstrate the flex-wrap property. */
+        /* The wrap value specifies that the flex items will wrap if necessary: */
+        .Wflex-container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: DodgerBlue;
+        }
+
+        .Wflex-container>div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+        /* The nowrap value specifies that the flex items will not wrap (this is default): */
+        .NWflex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: DodgerBlue;
+        }
+
+        .NWflex-container>div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+        /* The wrap-reverse value specifies that the flexible items will wrap if necessary, in reverse order: */
+        .WRflex-container {
+            display: flex;
+            flex-wrap: wrap-reverse;
+            background-color: DodgerBlue;
+        }
+
+        .WRflex-container>div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+        /* The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties. */
+        .SHflex-container {
+            display: flex;
+            flex-flow: row wrap;
+            background-color: DodgerBlue;
+        }
+
+        .SHflex-container>div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+        /* The justify-content property is used to align the flex items: */
+        /* The center value aligns the flex items at the center of the container: */
+        .JCflex-container {
+            display: flex;
+            justify-content: center;
+            background-color: DodgerBlue;
+        }
+
+        .JCflex-container>div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+        /* The flex-start value aligns the flex items at the beginning of the container (this is default): */
+        .FSflex-container {
+            display: flex;
+            justify-content: flex-start;
+            background-color: DodgerBlue;
+        }
+
+        .FSflex-container>div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+        /* The flex-end value aligns the flex items at the end of the container: */
+        .FEflex-container {
+            display: flex;
+            justify-content: flex-end;
+            background-color: DodgerBlue;
+        }
+
+        .FEflex-container>div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+        /* The space-around value displays the flex items with space before, between, and after the lines: */
+        .SAflex-container {
+            display: flex;
+            justify-content: space-around;
+            background-color: DodgerBlue;
+        }
+
+        .SAflex-container>div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+        /* The space-between value displays the flex items with space between the lines: */
+        .SBflex-container {
+            display: flex;
+            justify-content: space-between;
+            background-color: DodgerBlue;
+        }
+
+        .SBflex-container>div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <p>A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
+    <p>Direct child elements(s) of the flexible container automatically becomes flexible items.</p>
+    <h1>The flex-direction Property</h1>
+    <p>The flex-direction property defines in which direction the container wants to stack the flex items.</p>
+    <p>The "flex-direction: column;" stacks the flex items vertically (from top to bottom):</p>
+    <div class="Vflex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <h2>The "flex-direction: column-reverse;" stacks the flex items vertically (but from bottom to top):</h2>
+    <div class="BTflex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <h2>The "flex-direction: row;" stacks the flex items horizontally (from left to right):</h2>
+    <div class="LRflex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <h2>The "flex-direction: row-reverse;" stacks the flex items horizontally (but from right to left):</h2>
+    <div class="RLflex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <h2>The "flex-wrap: wrap;" specifies that the flex items will wrap if necessary:</h2>
+    <div class="Wflex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <h2>The "flex-wrap: nowrap;" specifies that the flex items will not wrap (this is default):</h2>
+    <div class="NWflex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <h2>The "flex-wrap: wrap-reverse;" specifies that the flex items will wrap if necessary, in reverse order:</h2>
+    <div class="WRflex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <h2>The flex-flow property is a shorthand property for the flex-direction and the flex-wrap properties.</h2>
+    <div class="SHflex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <h2>The "justify-content: center;" aligns the flex items at the center of the container:</h2>
+    <div class="JCflex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <h2>The "justify-content: flex-start;" aligns the flex items at the beginning of the container (this is default):
+    </h2>
+    <div class="FSflex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <h2>The "justify-content: flex-end;" aligns the flex items at the end of the container:</h2>
+    <div class="FEflex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <h2>The "justify-content: space-around;" displays the flex items with space before, between, and after the lines:
+    </h2>
+    <div class="SAflex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <h2>The "justify-content: space-between;" displays the flex items with space between the lines:</h2>
+    <div class="SBflex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

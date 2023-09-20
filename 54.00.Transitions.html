@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        /* The <div> element has also specified a transition effect for the width property, with a duration of 2 seconds: */
+        #transition {
+            width: 100px;
+            height: 100px;
+            background: red;
+            border: 4px solid black;
+            transition: width 2s;
+        }
+
+        /* a new value for the width property when a user mouses over the <div> element: */
+        #transition:hover {
+            width: 1500px;
+        }
+
+        /* a transition effect for both the width and height property, with a duration of 2 seconds for the width and 4 seconds for the height: */
+        #transition1 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            border: 4px solid black;
+            transition: width 2s, height 4s;
+        }
+
+        #transition1:hover {
+            width: 1500px;
+            height: 300px;
+        }
+
+        .t {
+            width: 100px;
+            height: 100px;
+            background: red;
+            border: 4px solid black;
+            transition: width 2s;
+        }
+
+        .div1 {
+            transition-timing-function: linear;
+        }
+
+        .div2 {
+            transition-timing-function: ease;
+        }
+
+        .div3 {
+            transition-timing-function: ease-in;
+        }
+
+        .div4 {
+            transition-timing-function: ease-out;
+        }
+
+        .div5 {
+            transition-timing-function: ease-in-out;
+        }
+
+        .t:hover {
+            width: 1500px;
+        }
+
+        /* The transition-delay property specifies a delay (in seconds) for the transition effect. */
+        #transition-delay {
+            width: 100px;
+            height: 100px;
+            background: red;
+            border: 4px solid black;
+            transition: width 3s;
+            transition-delay: 1s;
+        }
+
+        #transition-delay:hover {
+            width: 1500px;
+        }
+
+        /* adds a transition effect to the transformation: */
+        #TransitionTransform {
+            width: 100px;
+            height: 100px;
+            background: red;
+            border: 4px solid black;
+            transition: width 2s, height 2s, transform 2s;
+        }
+
+        #TransitionTransform:hover {
+            width: 300px;
+            height: 300px;
+            transform: rotate(180deg);
+        }
+
+        /* The CSS transition properties can be specified one by one, like this: */
+        #OnebyOne {
+            width: 100px;
+            height: 100px;
+            background: red;
+            border: 4px solid black;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+            transition-delay: 1s;
+        }
+
+        #OnebyOne:hover {
+            width: 1500px;
+        }
+
+        /* or by using the shorthand property transition: */
+        #Shorthand {
+            width: 100px;
+            height: 100px;
+            background: red;
+            border: 4px solid black;
+            transition: width 2s linear 1s;
+        }
+
+        #Shorthand:hover {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <p>Hover over the div element below,
+        to see the transition effect:</p>
+    <div id="transition">Hello Bangladesh
+    </div>
+    <hr>
+    <p>Hover over the div element below, to see the transition effect:</p>
+    <div id="transition1">Hello Bangladesh</div>
+    <hr>
+    <p>Hover over the div elements below, to see the different speed curves:</p>
+    <div class="div1 t">linear</div><br>
+    <div class="div2 t">ease</div><br>
+    <div class="div3 t ">ease-in</div><br>
+    <div class="div4 t">ease-out</div><br>
+    <div class="div5 t">ease-in-out</div><br>
+    <hr>
+    <p>Hover over the div element below, to see the transition effect:</p>
+    <div id="transition-delay">Hello Bangladesh</div>
+    <hr>
+    <p>Hover over the div element below:</p>
+    <div id="TransitionTransform">Hello Bangladesh</div>
+    <hr>
+    <p>Hover over the div element below, to see the transition effect:</p>
+    <div id="OnebyOne">Hello Bangladesh</div>
+    <hr>
+    <h1>Using The transition Shorthand Property</h1>
+    <div id="Shorthand">Hello Bangladesh</div>
+</body>
+</html>

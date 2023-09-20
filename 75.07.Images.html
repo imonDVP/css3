@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- You can use the media query min-device-width, instead of min-width, which checks the device width, instead of the browser width. Then the image will not change when you resize the browser window: -->
+    <style>
+        /* For device width smaller than 400px: */
+        body {
+            background-repeat: no-repeat;
+            background-image: url('canal.jpg');
+        }
+
+        /* For device width 400px and larger: */
+        @media only screen and (min-device-width: 400px) {
+            body {
+                background-image: url('bird2.jpg');
+            }
+        }
+    </style>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radial Gradient Examples</title>
+    <!-- we use a radial-gradient (shaped as a circle) as the mask layer for our image: -->
+    <style>
+        .mask2 {
+            -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+            mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="mask2">
+        <img src="bird2.jpg" alt="Cinque Terre" width="600" height="400">
+    </div>
+    <h3>Original image:</h3>
+    <img src="bird2.jpg" alt="Cinque Terre" width="600" height="400">
+</body>
+</html>

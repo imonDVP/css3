@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different Images for Different Devices</title>
+    <!-- A large image can be perfect on a big computer screen, but useless on a small device. Why load a large image when you have to scale it down anyway? To reduce the load, or for any other reasons, you can use media queries to display different images on different devices. -->
+    <!-- Here is one large image and one smaller image that will be displayed on different devices: -->
+    <style>
+        /* For width smaller than 400px: */
+        body {
+            background-repeat: no-repeat;
+            background-image: url('canal.jpg');
+        }
+
+        /* For width 400px and larger: */
+        @media only screen and (min-width: 400px) {
+            body {
+                background-image: url('flower6.jpg');
+            }
+        }
+    </style>
+</head>
+<body>
+    <p style="margin-top:360px;">Resize the browser width and the background image will change at 400px.</p>
+</body>
+</html>

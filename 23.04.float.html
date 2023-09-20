@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .box {
+            float: left;
+            width: 33.333333333333%;
+            padding: 50px;
+            height: 300px;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <div class="clearfix">
+        <div class="box" style="background-color:#bbb">
+            <p>Some text inside the box.</p>
+        </div>
+        <div class="box" style="background-color:#ccc">
+            <p>Some text inside the box.</p>
+        </div>
+        <div class="box" style="background-color:#ddd">
+            <p>Some text inside the box.</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- What is box-sizing?
+You can easily create three floating boxes side by side. However, when you add something that enlarges the width of each box (e.g. padding or borders), the box will break. The box-sizing property allows us to include the padding and border in the box's total width (and height), making sure that the padding stays inside of the box and that it does not break. -->
+
+<!-- Defines how the width and height of an element are calculated: should they include padding and borders, or not -->

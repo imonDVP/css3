@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using object-fit: cover</title>
+    <!-- If we use object-fit: cover; the image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit: -->
+    <style>
+        #cover {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        #contain {
+            width: 200px;
+            height: 300px;
+            object-fit: contain;
+        }
+
+        #fill {
+            width: 200px;
+            height: 300px;
+            object-fit: fill;
+        }
+
+        #none {
+            width: 200px;
+            height: 300px;
+            object-fit: none;
+        }
+
+        #scale-down {
+            width: 200px;
+            height: 300px;
+            object-fit: scale-down;
+        }
+
+        /* all the possible values of the object-fit property in one example: */
+        .fill {
+            object-fit: fill;
+        }
+
+        .contain {
+            object-fit: contain;
+        }
+
+        .cover {
+            object-fit: cover;
+        }
+
+        .scale-down {
+            object-fit: scale-down;
+        }
+
+        .none {
+            object-fit: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>Using object-fit: cover</h2>
+    <img id="cover" src="bird400by300.jpg" alt="Paris" width="400" height="300">
+    <hr>
+    <h2>Using object-fit: contain</h2>
+    <img id="contain" src="bird400by300.jpg" alt="Paris" width="400" height="300">
+    <hr>
+    <h2>Using object-fit: fill</h2>
+    <img id="fill" src="bird400by300.jpg" alt="Paris" width="400" height="300">
+    <hr>
+    <h2>Using object-fit: none</h2>
+    <img id="none" src="bird400by300.jpg" alt="Paris" width="400" height="300">
+    <hr>
+    <h2>Using object-fit: scale-down</h2>
+    <img id="scale-down" src="bird400by300.jpg" alt="Paris" width="400" height="300">
+    <hr>
+    <h2>No object-fit:</h2>
+    <img src="bird400by300.jpg" alt="Paris" style="width:200px;height:300px">
+    <h2>object-fit: fill (this is default):</h2>
+    <img class="fill" src="bird400by300.jpg" alt="Paris" style="width:200px;height:300px">
+    <h2>object-fit: contain:</h2>
+    <img class="contain" src="bird400by300.jpg" alt="Paris" style="width:200px;height:300px">
+    <h2>object-fit: cover:</h2>
+    <img class="cover" src="bird400by300.jpg" alt="Paris" style="width:200px;height:300px">
+    <h2>object-fit: scale-down:</h2>
+    <img class="scale-down" src="bird400by300.jpg" alt="Paris" style="width:200px;height:300px">
+    <h2>object-fit: none:</h2>
+    <img class="none" src="bird400by300.jpg" alt="Paris" style="width:200px;height:300px">
+</body>
+</html>

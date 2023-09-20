@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes and HTML Classes</title>
+    <style>
+        a.highlight:hover {
+            color: #ff0000;
+            font-size: 22px;
+            /* When you hover over the first link below, it will change color and font size */
+        }
+
+        #over {
+            background-color: green;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        #over:hover {
+            background-color: rgb(227, 44, 255);
+        }
+
+        p {
+            display: none;
+            background-color: yellow;
+            padding: 20px;
+        }
+
+        #tooltip:hover p {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <p><a class="highlight" href="https://dequeuniversity.com/" target="_blank">CSS Syntax</a></p>
+    <p><a href="https://dequeuniversity.com/" target="_blank">CSS Tutorial</a></p>
+    <hr style="border: 3px solid red">
+    <div id="over">Mouse Over Me</div>
+    <hr style="border: 3px solid red">
+    <div id="tooltip">Hover over this div element to show the p element
+        <p>Tada! Here I am!</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2.hidden {
+            display: none;
+            /* Hiding an element can be done by setting the display property to none. The element will be hidden, and the page will be displayed as if the element is not there */
+        }
+
+        h1.hidden {
+            visibility: hidden;
+            /* the element will still take up the same space as before. The element will be hidden, but still affect the layout */
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a visible heading</h1>
+    <h2 class="hidden">This is a hidden heading</h2>
+    <p>Notice that the h1 element with display: none; does not take up any space.</p>
+    <hr color="red">
+    <h1>This is a visible heading</h1>
+    <h1 class="hidden">This is a hidden heading</h1>
+    <p>Notice that the hidden heading still takes up space.</p>
+
+</body>
+</html>
+
+
+<!-- 
+flex	Displays an element as a block-level flex container
+grid	Displays an element as a block-level grid container
+table	Let the element behave like a <table> element
+none	The element is completely removed -->

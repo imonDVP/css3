@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The @keyframes Rule</title>\
+    <style>
+        #keyframes {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 3px solid black;
+            animation-name: imon;
+            animation-duration: 4s;
+        }
+
+        /* The animation will last for 4 seconds, and it will gradually change the background-color of the <div> element from "red" to "yellow":
+        */
+        @keyframes imon {
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: yellow;
+            }
+        }
+
+        /* The following imon will change the background-color of the <div> element when the animation is 25% complete, 50% complete, and again when the animation is 100% complete: */
+        #percent {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 3px solid black;
+            animation-name: imon;
+            animation-duration: 4s;
+        }
+
+        @keyframes imon {
+            0% {
+                background-color: red;
+            }
+
+            25% {
+                background-color: yellow;
+            }
+
+            50% {
+                background-color: blue;
+            }
+
+            100% {
+                background-color: green;
+            }
+        }
+
+        /* change both the background-color and the position of the <div> element when the animation is 25% complete, 50% complete, and again when the animation is 100% complete: */
+        #position {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 3px solid black;
+            position: relative;
+            animation-name: imon;
+            animation-duration: 4s;
+        }
+
+        @keyframes imon {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        /* The following imon has a 2 seconds delay before starting the animation: */
+        #delay {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: imon;
+            animation-duration: 4s;
+            animation-delay: 2s;
+        }
+
+        @keyframes imon {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        /* If using negative values, the animation will start as if it had already been playing for N seconds. */
+        /* In the following imon, the animation will start as if it had already been playing for 2 seconds: */
+        #negative {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: imon;
+            animation-duration: 4s;
+            animation-delay: -2s;
+        }
+
+        @keyframes imon {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        /* The following example will run the animation 3 times before it stops: */
+        #howtimes {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: imon;
+            animation-duration: 4s;
+            animation-iteration-count: 3;
+        }
+
+        @keyframes imon {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        /* The following example uses the value "infinite" to make the animation continue for ever: */
+        #infinite {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: imon;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes imon {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>The @keyframes Rule</h1>
+    <div id="keyframes">The @keyframes Rule</div>
+    <hr>
+    <div id="percent">The @keyframes Rule in percent</div>
+    <hr>
+    <div id="position">Hello Bangladesh</div>
+    <hr>
+    <div id="negative">Hello Bangladesh</div>
+    <hr>
+    <div id="howtimes">How Times</div>
+    <hr>
+    <div id="infinite">infinite Times</div>
+</body>
+</html>

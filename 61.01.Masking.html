@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Gradient as the Mask Layer</title>
+    <style>
+        /* Here, we use a linear-gradient as the mask layer for our image. This linear gradient goes from top (black) to bottom (transparent): */
+        .mask1 {
+            -webkit-mask-image: linear-gradient(black, transparent);
+            mask-image: linear-gradient(black, transparent);
+        }
+
+        /* we use a linear-gradient along with text masking as the mask layer for our image: */
+        p {
+            font-size: 20px;
+            padding: 20px;
+            color: white;
+        }
+
+        .mask1 {
+            max-width: 600px;
+            height: 350px;
+            overflow-y: scroll;
+            background: url(sea1.jpg) no-repeat;
+            -webkit-mask-image: linear-gradient(black, transparent);
+            mask-image: linear-gradient (black, transparent);
+        }
+    </style>
+</head>
+<body>
+    <h3>A linear gradient as a mask layer:</h3>
+    <div class="mask1">
+        <img src="bird2.jpg" alt="Cinque Terre" width="600" height="400">
+    </div>
+    <h3>Original image:</h3>
+    <img src="bird2.jpg" alt="Cinque Terre" width="600" height="400">
+    <div class="mask1">
+        <p>The Cinque Terre is a coastal area within Liguria, in the northwest of Italy. It lies in the west of La
+            Spezia Province, and comprises five villages: Monterosso al Mare, Vernazza, Corniglia, Manarola, and
+            Riomaggiore.</p>
+
+        <p>The Cinque Terre is a coastal area within Liguria, in the northwest of Italy. It lies in the west of La
+            Spezia Province, and comprises five villages: Monterosso al Mare, Vernazza, Corniglia, Manarola, and
+            Riomaggiore.</p>
+
+        <p>The Cinque Terre is a coastal area within Liguria, in the northwest of Italy. It lies in the west of La
+            Spezia Province, and comprises five villages: Monterosso al Mare, Vernazza, Corniglia, Manarola, and
+            Riomaggiore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus et, nemo praesentium delectus, porro doloremque veniam nesciunt accusantium voluptates, ab itaque sequi neque. Reiciendis saepe dignissimos, error eos facilis quam a impedit quibusdam. Repellat facilis recusandae blanditiis aperiam quo architecto ipsa iusto ullam quam, rem voluptate nostrum quas odio corrupti aliquid vitae accusantium asperiores reiciendis! Neque exercitationem quo sint pariatur eum aut eveniet, accusamus ullam blanditiis cupiditate sunt. Quis, natus, rerum dolores iusto at nulla facilis ipsam cumque, laboriosam illo totam quibusdam consequuntur eligendi aperiam consequatur veritatis quam debitis officiis! Nobis vero eligendi labore repudiandae molestiae ut voluptates iste error provident adipisci non corporis exercitationem beatae soluta voluptate obcaecati pariatur quaerat, rerum, eaque tenetur enim nemo sunt harum? Veritatis unde laboriosam ex laborum in tempora consequatur, id eligendi. Natus sit eligendi nemo ducimus quae animi praesentium quibusdam ut pariatur tenetur tempore error architecto, possimus itaque neque quis quam, doloremque alias deserunt ullam nam maiores? Libero iste distinctio odit fugiat quae officiis dolore exercitationem repellat dignissimos, animi eius aliquam. Expedita nemo eveniet itaque tempora ipsa commodi? Esse sint quaerat nulla temporibus excepturi, corporis, delectus numquam ab suscipit aspernatur, assumenda voluptatem laborum ea. Repellendus, totam accusantium! Sint ipsum possimus labore atque quasi.</p>
+    </div>
+
+</body>
+</html>

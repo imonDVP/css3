@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Image Reflections</title>
+    <style>
+        #below {
+            height: 200px;
+            width: 400px;
+            float: left;
+            -webkit-box-reflect: below;
+        }
+
+        #right {
+            height: 200px;
+            width: 400px;
+            float: right;
+            -webkit-box-reflect: right;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img id="below" src="bird2.jpg">
+        <hr>
+        <img id="right" src="bird2.jpg">
+    </div>
+</html>

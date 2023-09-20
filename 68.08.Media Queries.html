@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Grid</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .header {
+            text-align: center;
+            padding: 32px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .column {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+            .column {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>Responsive Image Grid</h1>
+        <p>Resize the browser window to see the responsive effect.</p>
+    </div>
+    <!-- Photo Grid -->
+    <div class="row">
+        <div class="column">
+            <img src="art.jpg" style="width:100%">
+            <img src="bird2.jpg" style="width:100%">
+            <img src="bird3.jpg" style="width:100%">
+            <img src="fruit.jpg" style="width:100%">
+            <img src="flower 1.jpg" style="width:100%">
+            <img src="female.jpg" style="width:100%">
+            <img src="leaf.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="leaf1.jpg" style="width:100%">
+            <img src="couple.jpg" style="width:100%">
+            <img src="leaf4.jpg" style="width:100%">
+            <img src="growth.png" style="width:100%">
+            <img src="canal.jpg" style="width:100%">
+            <img src="leaf2.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="flower.jpg" style="width:100%">
+            <img src="flower4.jpg" style="width:100%">
+            <img src="leaf4.jpg" style="width:100%">
+            <img src="leaf3.jpg" style="width:100%">
+            <img src="circle.gif" style="width:100%">
+            <img src="bird4.jpg" style="width:100%">
+            <img src="bird3.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="idea.gif" style="width:100%">
+            <img src="flower4.jpg" style="width:100%">
+            <img src="wall.jpg" style="width:100%">
+            <img src="wall3.jpg" style="width:100%">
+            <img src="star.png" style="width:100%">
+            <img src="sky.jpg" style="width:100%">
+        </div>
+    </div>
+</body>
+</html>

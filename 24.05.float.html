@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .img-container {
+            float: left;
+            width: 20%;
+            padding: 5px;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <div class="clearfix">
+        <div class="img-container">
+            <img src="art.jpg" alt="Italy" style="width:100% ;height: 1000px">
+        </div>
+        <div class="img-container">
+            <img src="flower.jpg" alt="Forest" style="width:100% ;height: 1000px">
+        </div>
+        <div class="img-container">
+            <img src="rainbow.jpg" alt="Mountains" style="width:100% ;height: 1000px">
+        </div>
+        <div class="img-container">
+            <img src="rock3.jpg" alt="Mountains" style="width:100% ;height: 1000px">
+        </div>
+        <div class="img-container">
+            <img src="spring.jpg" alt="Mountains" style="width:100% ;height: 1000px">
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+<!-- 
+If an element is taller than the element containing it, and it is floated, it will overflow outside of its container. You can use the "clearfix hack" to fix this -->

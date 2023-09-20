@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .center {
+            padding: 70px 0;
+            /* There are many ways to center an element vertically in CSS. A simple solution is to use top and bottom padding */
+            border: 3px solid green;
+        }
+
+        .centerB {
+            padding: 70px 0;
+            border: 3px solid green;
+            text-align: center;
+        }
+
+        .centerH {
+            line-height: 200px;
+            height: 200px;
+            border: 3px solid green;
+            text-align: center;
+        }
+
+        .center p {
+            line-height: 1.5;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <p>I am vertically centered.</p>
+    </div>
+    <hr style="border: 4px solid red;">
+    <div class="centerB">
+        <p>I am vertically and horizontally centered.</p>
+    </div>
+    <hr style="border: 4px solid red;">
+    <div class="centerH">
+        <p>I am vertically and horizontally centered.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Items</title>
+    <style>
+        /* Child Elements (Items): The direct child elements of a flex container automatically becomes flexible (flex) items. */
+        .flex-container {
+            display: flex;
+            background-color: #f1f1f1;
+        }
+
+        .flex-container>div {
+            background-color: DodgerBlue;
+            color: white;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+        /* The order property specifies the order of the flex items. */
+        /* The first flex item in the code does not have to appear as the first item in the layout. */
+        /* The order value must be a number, default value is 0. */
+        /* The order property can change the order of the flex items: */
+        .FOflex-container {
+            display: flex;
+            align-items: stretch;
+            background-color: #f1f1f1;
+        }
+
+        .FOflex-container>div {
+            background-color: DodgerBlue;
+            color: white;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+        /* The flex-grow property specifies how much a flex item will grow relative to the rest of the flex items. */
+        /* The value must be a number, default value is 0. */
+        .FGflex-container {
+            display: flex;
+            align-items: stretch;
+            background-color: #f1f1f1;
+        }
+
+        .FGflex-container>div {
+            background-color: DodgerBlue;
+            color: white;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+        /* The flex-shrink property specifies how much a flex item will shrink relative to the rest of the flex items. */
+        /* The value must be a number, default value is 1. */
+        .FSflex-container {
+            display: flex;
+            align-items: stretch;
+            background-color: #f1f1f1;
+        }
+
+        .FSflex-container>div {
+            background-color: DodgerBlue;
+            color: white;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+        /* The flex-basis property specifies the initial length of a flex item. */
+        /* Set the initial length of the third flex item to 200 pixels: */
+        .FBflex-container {
+            display: flex;
+            align-items: stretch;
+            background-color: #f1f1f1;
+        }
+
+        .FBflex-container>div {
+            background-color: DodgerBlue;
+            color: white;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+        /* The flex property is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties. */
+        /* Make the third flex item not growable (0), not shrinkable (0), and with an initial length of 200 pixels: */
+        .SHflex-container {
+            display: flex;
+            align-items: stretch;
+            background-color: #f1f1f1;
+        }
+
+        .SHflex-container>div {
+            background-color: DodgerBlue;
+            color: white;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+        /* The align-self property specifies the alignment for the selected item inside the flexible container. */
+        /* The align-self property overrides the default alignment set by the container's align-items property. */
+        /* Align the third flex item in the middle of the container: */
+        .ASflex-container {
+            display: flex;
+            height: 200px;
+            background-color: #f1f1f1;
+        }
+
+        .ASflex-container>div {
+            background-color: DodgerBlue;
+            color: white;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+        /* Align the second flex item at the top of the container, and the third flex item at the bottom of the container: */
+        .AS1flex-container {
+            display: flex;
+            height: 200px;
+            background-color: #f1f1f1;
+        }
+
+        .AS1flex-container>div {
+            background-color: DodgerBlue;
+            color: white;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexible Items</h1>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <p>All direct children of a flexible container becomes flexible items.</p>
+    <h2>Use the order property to sort the flex items as you like:</h2>
+    <div class="FOflex-container">
+        <div style="order: 3">1</div>
+        <div style="order: 2">2</div>
+        <div style="order: 4">3</div>
+        <div style="order: 1">4</div>
+    </div>
+    <h2>Make the third flex item grow eight times faster than the other flex items:</h2>
+    <div class="FGflex-container">
+        <div style="flex-grow: 1">1</div>
+        <div style="flex-grow: 1">2</div>
+        <div style="flex-grow: 8">3</div>
+    </div>
+    <h2>Do not let the third flex item shrink as much as the other flex items:</h2>
+    <div class="FSflex-container">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex-shrink: 0">3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+    <h2>Set the initial length of the third flex item to 200 pixels:</h2>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex-basis:200px">3</div>
+        <div>4</div>
+    </div>
+    <h2>Make the third flex item not growable (0), not shrinkable (0), and with an initial length of 200 pixels:</h2>
+    <div class="SHflex-container">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex: 0 0 200px">3</div>
+        <div>4</div>
+    </div>
+    <h2>The "align-self: center;" aligns the selected flex item in the middle of the container:</h2>
+    <div class="ASflex-container">
+        <div>1</div>
+        <div>2</div>
+        <div style="align-self: center">3</div>
+        <div>4</div>
+    </div>
+    <p>The align-self property overrides the align-items property of the container.</p>
+    <h1>The align-self Property</h1>
+    <p>The "align-self: flex-start;" aligns the selected flex item at the top of the container.</p>
+    <p>The "align-self: flex-end;" aligns the selected flex item at the bottom of the container.</p>
+    <div class="AS1flex-container">
+        <div>1</div>
+        <div style="align-self: flex-start">2</div>
+        <div style="align-self: flex-end">3</div>
+        <div>4</div>
+    </div>
+    <p>The align-self property overrides the align-items property of the container.</p>
+</body>
+</html>

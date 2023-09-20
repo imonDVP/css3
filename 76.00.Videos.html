@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using The width Property</title>
+    <!-- If the width property is set to 100%, the video player will be responsive and scale up and down: -->
+    <style>
+        video {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <video width="400" controls>
+        <source src="duck.mp4" type="video/mp4">
+        <source src="duck.mp4" type="video/ogg">
+        Your browser does not support HTML5 video.
+    </video>
+    <p>Resize the browser window to see how the size of the video player will scale.</p>
+</body>
+</html>
+
+
+Notice that in the example above, the video player can be scaled up to be larger than its original size. A better
+solution, in many cases, will be to use the max-width property instead.
