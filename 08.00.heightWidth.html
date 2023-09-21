@@ -1,58 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      #one {
-        border: 4px solid crimson;
-        margin: 5px;
-        background-color: rgb(178, 205, 109);
-        height: 100%;
-        width: 100%;
-      }
-      #two {
-        border: 4px solid rgb(92, 8, 187);
-        margin: 5px;
-        background-color: rgb(79, 151, 214);
-      }
-      #three {
-        border: 4px solid rgb(20, 201, 50);
-        margin: 5px;
-        background-color: rgb(209, 139, 205);
-        /* min-width: 100px;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    #one {
+      border: 4px solid crimson;
+      margin: 5px;
+      background-color: rgb(178, 205, 109);
+      height: 100%;
+      width: 100%;
+    }
+
+    #two {
+      border: 4px solid rgb(92, 8, 187);
+      margin: 5px;
+      background-color: rgb(79, 151, 214);
+    }
+
+    #three {
+      border: 4px solid rgb(20, 201, 50);
+      margin: 5px;
+      background-color: rgb(209, 139, 205);
+      /* min-width: 100px;
         max-width 400px; */
-      }
-    </style>
-    <title>height width</title>
-  </head>
-  <body>
-    <div id="one">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nulla
-      maiores error vero. Culpa, dolorem? Amet dolores itaque dolorum, labore
-      vitae expedita, beatae, nostrum quaerat placeat deserunt distinctio optio
-      tempora est accusantium voluptates inventore? Odio laboriosam corporis
-      nihil molestias saepe, placeat natus? Odio, fugit recusandae neque
-      architecto voluptas modi laudantium incidunt dolores facere dolor dolorem!
-    </div>
-    <div id="two">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A soluta deleniti
-      voluptatibus, doloremque eum cupiditate aperiam beatae non nostrum
-      dolores, itaque commodi? Magnam, velit architecto ducimus animi voluptas
-      explicabo facilis.
-    </div>
-    <div id="three">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam veritatis,
-      consequatur officia in laboriosam ullam delectus ea dignissimos dolore
-      perspiciatis cupiditate molestiae error magni praesentium consectetur ab
-      distinctio. Eos voluptatum facilis voluptatibus omnis doloremque ducimus
-      et aliquam corrupti debitis consequatur! Exercitationem, mollitia! Facilis
-      laboriosam officiis, accusantium debitis consequatur omnis, quos minus
-      fugiat deleniti iste vitae natus delectus quibusdam ipsa! A dolorum
-      repellat sequi at laudantium officia eaque. Placeat voluptas repellendus
-      alias. Voluptates, at nobis. Esse iure rem officiis laboriosam, expedita
-      eveniet placeat, nesciunt ea impedit perferendis ut quibusdam praesentium
-      optio?
-    </div>
-  </body>
+    }
+  </style>
+  <title>height width</title>
+</head>
+<body>
+  <div id="one">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nulla
+    maiores error vero. Culpa, dolorem? Amet dolores itaque dolorum, labore
+    vitae expedita, beatae, nostrum quaerat placeat deserunt distinctio optio
+    tempora est accusantium voluptates inventore? Odio laboriosam corporis
+    nihil molestias saepe, placeat natus? Odio, fugit recusandae neque
+    architecto voluptas modi laudantium incidunt dolores facere dolor dolorem!
+  </div>
+  <div id="two">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. A soluta deleniti
+    voluptatibus, doloremque eum cupiditate aperiam beatae non nostrum
+    dolores, itaque commodi? Magnam, velit architecto ducimus animi voluptas
+    explicabo facilis.
+  </div>
+  <div id="three">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam veritatis,
+    consequatur officia in laboriosam ullam delectus ea dignissimos dolore
+    perspiciatis cupiditate molestiae error magni praesentium consectetur ab
+    distinctio. Eos voluptatum facilis voluptatibus omnis doloremque ducimus
+    et aliquam corrupti debitis consequatur! Exercitationem, mollitia! Facilis
+    laboriosam officiis, accusantium debitis consequatur omnis, quos minus
+    fugiat deleniti iste vitae natus delectus quibusdam ipsa! A dolorum
+    repellat sequi at laudantium officia eaque. Placeat voluptas repellendus
+    alias. Voluptates, at nobis. Esse iure rem officiis laboriosam, expedita
+    eveniet placeat, nesciunt ea impedit perferendis ut quibusdam praesentium
+    optio?
+  </div>
+</body>
 </html>
+<!-- The CSS height and width properties are used to set the height and width of an element. -->
+<!-- The CSS max-width property is used to set the maximum width of an element. -->
+<!-- The CSS height and width properties are used to set the height and width of an element. -->
+<!-- The CSS max-width property is used to set the maximum width of an element. -->
+<!-- The height and width properties may have the following values:
+1.auto -This is default. The browser calculates the height and width
+2.length - Defines the height/width in px, cm, etc.
+3.% - Defines the height/width in percent of the containing block
+4.initial - Sets the height/width to its default value
+5.inherit - The height/width will be inherited from its parent value -->
+<!-- Note: Remember that the height and width properties do not include padding, borders, or margins! They set the height/width of the area inside the padding, border, and margin of the element! -->
+<!-- The max-width property is used to set the maximum width of an element.
+The max-width can be specified in length values, like px, cm, etc., or in percent (%) of the containing block, or set to none (this is default. Means that there is no maximum width).
+The problem with the <div> above occurs when the browser window is smaller than the width of the element (500px). The browser then adds a horizontal scrollbar to the page.
+Using max-width instead, in this situation, will improve the browser's handling of small windows.
+Tip: Drag the browser window to smaller than 500px wide, to see the difference between the two divs!
+Note: If you for some reason use both the width property and the max-width property on the same element, and the value of the width property is larger than the max-width property; the max-width property will be used (and the width property will be ignored). -->
+<!-- Set the height and width of elements
+img.one {
+  height: auto;
+}
+img.two {
+  height: 200px;
+  width: 200px;
+}
+This example demonstrates how to set the height and width of different elements. -->
+<!-- Set the height and width of an image using percent
+html, body {
+  height: 100%;
+}
+img.one {
+  height: auto;
+  width: auto;
+}
+img.two {
+  height: 50%;
+  width: 50%;
+}
+This example demonstrates how to set the height and width of an image using a percent value. -->
+<!-- Set min-width and max-width of an element
+div {
+  max-width: 400px;
+  min-width: 100px;
+  background-color: powderblue;
+}
+This example demonstrates how to set a minimum width and a maximum width of an element using a pixel value. -->
+<!-- Set min-height and max-height of an element
+div {
+  max-height: 600px;
+  min-height: 400px;
+  background-color: powderblue;
+}
+This example demonstrates how to set a minimum height and a maximum height of an element using a pixel value. -->
+<!-- height	Sets the height of an element
+max-height	Sets the maximum height of an element
+max-width	Sets the maximum width of an element
+min-height	Sets the minimum height of an element
+min-width	Sets the minimum width of an element
+width	Sets the width of an element -->

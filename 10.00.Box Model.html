@@ -1,72 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      h1 {
-        background-color: antiquewhite;
-        border: 40px solid red;
-        width: 500px;
-        margin: 50px;
-        padding: 50px;
-      }
-      p {
-        background-color: rgb(148, 107, 54);
-        border: 40px solid rgb(76, 12, 196);
-        width: 500px;
-        margin: 50px;
-        padding: 50px;
-            /* 500px (width)+ 50*2px (left + right padding)
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    h1 {
+      background-color: antiquewhite;
+      border: 40px solid red;
+      width: 500px;
+      margin: 50px;
+      padding: 50px;
+    }
+
+    p {
+      background-color: rgb(148, 107, 54);
+      border: 40px solid rgb(76, 12, 196);
+      width: 500px;
+      margin: 50px;
+      padding: 50px;
+      /* 500px (width)+ 50*2px (left + right padding)
             + 40*2px (left + right border)
             + 50*2px (left + right margin)
             = 780px */
-            /* Total element width = width + left padding + right padding + left border + right border + left margin + right margin */
-            /* Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin */
-      }
-      .one {
-        background-color: rgb(74, 49, 16);
-        border: 40px solid rgb(5, 119, 31);
-        width: 500px;
-        margin: 50px;
-        padding: 50px;
-      }
-    </style>
-    <title>Box Model</title>
-  </head>
-  <body>
-    <h1>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab vitae debitis
-      culpa libero mollitia nemo, sit distinctio quas qui corporis!
-    </h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit delectus
-      minima error facere, unde sequi temporibus ex beatae, dolorem nostrum, ad
-      eos pariatur. Officia harum dignissimos qui amet et ad quae, quisquam
-      nesciunt reprehenderit itaque voluptate nihil odit dicta expedita? Ut
-      nihil at eius aliquam iste? Ea suscipit placeat saepe totam sit. Ratione
-      esse tempore possimus amet consequatur odit deleniti? Consequuntur
-      doloribus culpa accusantium modi dicta error corrupti, necessitatibus
-      possimus!
-    </p>
-    <div class="one">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sint,
-      eveniet nam at laudantium, architecto temporibus minus distinctio ipsam,
-      totam sequi officiis vero non saepe accusantium provident molestias itaque
-      repellendus aspernatur id et ducimus? Laborum dolore doloribus tenetur
-      quas ea ad repellendus dolorum sit molestiae beatae! Obcaecati aliquid
-      minima nesciunt ea! Quis nesciunt voluptatem voluptatibus soluta, esse
-      natus ratione odit ea, culpa reiciendis eos veniam sunt optio beatae id
-      facere. Odit veniam nesciunt inventore mollitia optio, nostrum ipsa vel
-      veritatis eos ex adipisci minus? Incidunt accusantium architecto,
-      consequuntur dolorem perspiciatis delectus eaque ipsum iure neque fugiat
-      assumenda vero iusto excepturi quae odio. Temporibus minima, earum
-      corporis nesciunt a suscipit, similique explicabo inventore animi
-      provident cum eaque. Cupiditate sequi saepe officia eum quisquam minus,
-      animi aspernatur doloremque hic commodi impedit, nobis voluptatibus, ipsa
-      nihil ducimus omnis maiores? Vitae temporibus in harum dolorum, cum dicta
-      eius quae fuga quia, veritatis repellat deleniti qui consequatur eum
-      minima enim ducimus facere earum! Beatae, voluptatibus.
-    </div>
-  </body>
+      /* Total element width = width + left padding + right padding + left border + right border + left margin + right margin */
+      /* Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin */
+    }
+
+    .one {
+      background-color: rgb(74, 49, 16);
+      border: 40px solid rgb(5, 119, 31);
+      width: 500px;
+      margin: 50px;
+      padding: 50px;
+    }
+  </style>
+  <title>Box Model</title>
+</head>
+<body>
+  <h1>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab vitae debitis
+    culpa libero mollitia nemo, sit distinctio quas qui corporis!
+  </h1>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit delectus
+    minima error facere, unde sequi temporibus ex beatae, dolorem nostrum, ad
+    eos pariatur. Officia harum dignissimos qui amet et ad quae, quisquam
+    nesciunt reprehenderit itaque voluptate nihil odit dicta expedita? Ut
+    nihil at eius aliquam iste? Ea suscipit placeat saepe totam sit. Ratione
+    esse tempore possimus amet consequatur odit deleniti? Consequuntur
+    doloribus culpa accusantium modi dicta error corrupti, necessitatibus
+    possimus!
+  </p>
+  <div class="one">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sint,
+    eveniet nam at laudantium, architecto temporibus minus distinctio ipsam,
+    totam sequi officiis vero non saepe accusantium provident molestias itaque
+    repellendus aspernatur id et ducimus? Laborum dolore doloribus tenetur
+    quas ea ad repellendus dolorum sit molestiae beatae! Obcaecati aliquid
+    minima nesciunt ea! Quis nesciunt voluptatem voluptatibus soluta, esse
+    natus ratione odit ea, culpa reiciendis eos veniam sunt optio beatae id
+    facere. Odit veniam nesciunt inventore mollitia optio, nostrum ipsa vel
+    veritatis eos ex adipisci minus? Incidunt accusantium architecto,
+    consequuntur dolorem perspiciatis delectus eaque ipsum iure neque fugiat
+    assumenda vero iusto excepturi quae odio. Temporibus minima, earum
+    corporis nesciunt a suscipit, similique explicabo inventore animi
+    provident cum eaque. Cupiditate sequi saepe officia eum quisquam minus,
+    animi aspernatur doloremque hic commodi impedit, nobis voluptatibus, ipsa
+    nihil ducimus omnis maiores? Vitae temporibus in harum dolorum, cum dicta
+    eius quae fuga quia, veritatis repellat deleniti qui consequatur eum
+    minima enim ducimus facere earum! Beatae, voluptatibus.
+  </div>
+</body>
 </html>
+<!-- All HTML elements can be considered as boxes. -->
+<!-- In CSS, the term "box model" is used when talking about design and layout. -->
+<!-- The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. -->
+<!-- Content - The content of the box, where text and images appear
+Padding - Clears an area around the content. The padding is transparent
+Border - A border that goes around the padding and content
+Margin - Clears an area outside the border. The margin is transparent -->
+<!-- The box model allows us to add a border around elements, and to define space between elements.  -->
+<!-- In order to set the width and height of an element correctly in all browsers, you need to know how the box model works. -->
+<!-- Important: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must also add padding, borders and margins. -->
+<!-- Here is the calculation:320px (width)+ 20px (left + right padding)+ 10px (left + right border)+ 0px (left + right margin)= 350px -->
+<!-- The total width of an element should be calculated like this:
+Total element width = width + left padding + right padding + left border + right border + left margin + right margin -->
+<!-- The total height of an element should be calculated like this:
+Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin -->
