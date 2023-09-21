@@ -1,27 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      a:link {
-        color: rgb(236, 168, 22);
-      }
-      a:visited {
-        color: green;
-      }
-      a:active {
-        color: hsl(0, 88%, 46%);
-      }
-      a:hover {
-        color: rgb(22, 5, 249);
-      }
-    </style>
-    <title>selector</title>
-  </head>
-  <body>
-    <p>
-      <br /><a href="https://developer.mozilla.org/en-US/">Mozilla Developer</a>
-    </p>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    a:link {
+      color: rgb(236, 168, 22);
+    }
+
+    a:visited {
+      color: green;
+    }
+
+    a:active {
+      color: hsl(0, 88%, 46%);
+    }
+
+    a:hover {
+      color: rgb(22, 5, 249);
+    }
+  </style>
+  <title>selector</title>
+</head>
+<body>
+  <p>
+    <br /><a href="https://developer.mozilla.org/en-US/">Mozilla Developer</a>
+  </p>
+</body>
 </html>
+<!-- When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet. -->
+<!-- There are three ways of inserting a style sheet:
+1.External CSS
+2.Internal CSS
+3.Inline CSS -->
+<!-- External style sheets can be referenced with a full URL or with a path relative to the current web page. -->
+<!-- External styles are defined within the <link> element, inside the <head> section of an HTML page -->
+<!-- This example uses a full URL to link to a style sheet:<link rel="stylesheet" href="https://www.pust.ac.com/html/styles.css"> -->
+<!-- This example links to a style sheet located in the html folder on the current web site:<link rel="stylesheet" href="/html/styles.css"> -->
+<!-- This example links to a style sheet located in the same folder as the current page:<link rel="stylesheet" href="styles.css"> -->
+<!-- Note: Do not add a space between the property value (20) and the unit (px):
+Incorrect (space): margin-left: 20 px;
+Correct (no space): margin-left: 20px; -->
+<!-- An internal style sheet may be used if one single HTML page has a unique style.
+The internal style is defined inside the <style> element, inside the head section. -->
+<!-- An inline style may be used to apply a unique style for a single element.
+To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property. -->
+<!-- Tip: An inline style loses many of the advantages of a style sheet (by mixing content with presentation). Use this method sparingly. -->
+<!-- If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used.  -->
+<!-- What style will be used when there is more than one style specified for an HTML element?
+All the styles in a page will "cascade" into a new "virtual" style sheet by the following rules, where number one has the highest priority:
+1.Inline style (inside an HTML element)
+2.External and internal style sheets (in the head section)
+3.Browser default
+So, an inline style has the highest priority, and will override external and internal styles and browser defaults. -->
