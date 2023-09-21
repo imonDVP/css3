@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS background - Shorthand property</title>
+    <style>
+        /* body {
+            background-color: #ffffff;
+            background-image: url("bird2.jpg");
+            background-repeat: no-repeat;
+            background-position: right top;
+        } */
+
+        body {
+            background: #ffffff url("bird2.jpg") no-repeat right top;
+            margin-right: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>The background Property</h1>
+    <p>
+        The background property is a shorthand property for specifying all the background properties in one
+        declaration.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum numquam veniam enim vel, quam
+        laborum obcaecati,
+        ipsa aperiam dignissimos, blanditiis illo reprehenderit. A fuga rem accusamus ad molestias culpa, obcaecati,
+        eius iure adipisci dolorum corporis hic aliquam officia vero quisquam reiciendis provident eum excepturi dicta
+        perspiciatis explicabo quos! Impedit a quia ducimus voluptatibus mollitia maiores, error saepe consectetur
+        velit. Suscipit dignissimos culpa soluta eligendi sequi aspernatur dicta voluptatibus est, quas consequatur
+        excepturi quia, perspiciatis fugiat laudantium porro totam? Distinctio repudiandae debitis ea modi possimus,
+        ducimus nisi numquam culpa quo? Earum rem laudantium, officiis et doloribus accusamus est consequatur hic
+        dolorem.
+    </p>
+    <p>
+        Here, the background image is only shown once, and it is also positioned in the top-right corner.
+    </p>
+    <p>
+        We have also added a right margin, so that the text will not write over the background image.
+    </p>
+</body>
+</html>
+<!-- To shorten the code, it is also possible to specify all the background properties in one single property. This is called a shorthand property.
+When using the shorthand property the order of the property values is:
+1.background-color
+2.background-image
+3.background-repeat
+4.background-attachment
+5.background-position
+Use the shorthand property to set the background properties in one declaration: background: #ffffff url("bird2.jpg") no-repeat right top;
+It does not matter if one of the property values is missing, as long as the other ones are in this order. Note that we do not use the background-attachment property in the examples above, as it does not have a value. -->
+<!-- background	Sets all the background properties in one declaration
+background-attachment	Sets whether a background image is fixed or scrolls with the rest of the page
+background-clip	Specifies the painting area of the background
+background-color	Sets the background color of an element
+background-image	Sets the background image for an element
+background-origin	Specifies where the background image(s) is/are positioned
+background-position	Sets the starting position of a background image
+background-repeat	Sets how a background image will be repeated
+background-size	Specifies the size of the background image(s) -->
