@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Font Style</title>
+    <style>
+        p.normal {
+            font-style: normal;
+            font-weight: normal;
+            /* font-weight: lighter;
+            font-weight: bold;
+            font-weight: 900; */
+        }
+
+        p.italic {
+            font-style: italic;
+            /* font-variant: normal;
+            font-variant: small-caps; */
+        }
+
+        p.oblique {
+            font-style: oblique;
+        }
+    </style>
+</head>
+<body>
+    <h1>The font-style property</h1>
+    <p class="normal">This is a paragraph in normal style.</p>
+    <p class="italic">This is a paragraph in italic style.</p>
+    <p class="oblique">This is a paragraph in oblique style.</p>
+</body>
+</html>
+<!-- The font-style property is mostly used to specify italic text.
+This property has three values:
+1.normal - The text is shown normally
+2.italic - The text is shown in italics
+3.oblique - The text is "leaning" (oblique is very similar to italic, but less supported) -->
+<!-- The font-weight property specifies the weight of a font -->
+<!-- The font-variant property specifies whether or not a text should be displayed in a small-caps font.
+In a small-caps font, all lowercase letters are converted to uppercase letters. However, the converted uppercase letters appears in a smaller font size than the original uppercase letters in the text. -->

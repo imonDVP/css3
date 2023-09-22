@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The CSS Font Property</title>
+    <style>
+        p.a {
+            font: 20px Arial, sans-serif;
+        }
+
+        p.b {
+            font: italic small-caps bold 12px/30px Georgia, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>The font Property</h1>
+    <p class="a">This is a paragraph. The font size is set to 20 pixels, and the font family is Arial.</p>
+    <p class="b">This is a paragraph. The font is set to italic, small-caps and bold, the font size is set to 12 pixels,
+        the line height is set to 30 pixels, and the font family is Georgia.</p>
+</body>
+</html>
+<!-- To shorten the code, it is also possible to specify all the individual font properties in one property.
+The font property is a shorthand property for:
+1.font-style
+2.font-variant
+3.font-weight
+4.font-size/line-height
+5.font-family
+Note: The font-size and font-family values are required. If one of the other values is missing, their default value are used. -->
+<!-- Use font to set several font properties in one declaration:
+1.font: 20px Arial, sans-serif;
+2.font: italic small-caps bold 12px/30px Georgia, serif; -->
+<!-- font	Sets all the font properties in one declaration
+font-family	Specifies the font family for text
+font-size	Specifies the font size of text
+font-style	Specifies the font style for text
+font-variant	Specifies whether or not a text should be displayed in a small-caps font
+font-weight	Specifies the weight of a font -->
