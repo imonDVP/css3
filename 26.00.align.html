@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Layout - Horizontal & Vertical Align</title>
     <style>
         .center {
             margin-left: auto;
@@ -32,11 +32,17 @@
     <img src="flower.jpg" alt="Paris">
 </body>
 </html>
-
-
-
-
-
 <!-- To horizontally center a block element (like <div>), use margin: auto;
-    Setting the width of the element will prevent it from stretching out to the edges of its container.
-    The element will then take up the specified width, and the remaining space will be split equally between the two margins -->
+Setting the width of the element will prevent it from stretching out to the edges of its container.
+The element will then take up the specified width, and the remaining space will be split equally between the two margins -->
+<!-- Note: Center aligning has no effect if the width property is not set (or set to 100%). -->
+<!-- To just center the text inside an element, use text-align: center; -->
+<!-- To center an image, set left and right margin to auto and make it into a block element -->
+<!-- One method for aligning elements is to use position: absolute; -->
+<!-- Note: Absolute positioned elements are removed from the normal flow, and can overlap elements. -->
+<!-- Another method for aligning elements is to use the float property -->
+<!-- Note: If an element is taller than the element containing it, and it is floated, it will overflow outside of its container. You can use the "clearfix hack" to fix this -->
+<!-- Then we can add the clearfix hack to the containing element to fix this problem -->
+<!-- There are many ways to center an element vertically in CSS. A simple solution is to use top and bottom padding -->
+<!-- To center both vertically and horizontally, use padding and text-align: center -->
+<!-- Another trick is to use the line-height property with a value that is equal to the height property -->
