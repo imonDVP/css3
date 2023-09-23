@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Grid of Boxes / Equal Width Boxes</title>
     <style>
         * {
             box-sizing: border-box;
@@ -37,14 +37,16 @@
     </div>
 </body>
 </html>
-
-
-
-
-
-
-
 <!-- What is box-sizing?
 You can easily create three floating boxes side by side. However, when you add something that enlarges the width of each box (e.g. padding or borders), the box will break. The box-sizing property allows us to include the padding and border in the box's total width (and height), making sure that the padding stays inside of the box and that it does not break. -->
-
 <!-- Defines how the width and height of an element are calculated: should they include padding and borders, or not -->
+<!-- Equal Height Boxes
+you learned how to float boxes side by side with an equal width. However, it is not easy to create floating boxes with equal heights. A quick fix however, is to set a fixed height
+However, this is not very flexible. It is ok if you can guarantee that the boxes will always have the same amount of content in them. But many times, the content is not the same. If you try the example above on a mobile phone, you will see that the second box's content will be displayed outside of the box. This is where CSS3 Flexbox comes in handy - as it can automatically stretch boxes to be as long as the longest box. -->
+<!-- You can also use float with a list of hyperlinks to create a horizontal menu -->
+<!-- box-sizing	Defines how the width and height of an element are calculated: should they include padding and borders, or not
+clear	Specifies what should happen with the element that is next to a floating element
+float	Specifies whether an element should float to the left, right, or not at all
+overflow	Specifies what happens if content overflows an element's box
+overflow-x	Specifies what to do with the left/right edges of the content if it overflows the element's content area
+overflow-y	Specifies what to do with the top/bottom edges of the content if it overflows the element's content area -->
