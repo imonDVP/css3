@@ -22,3 +22,45 @@
     <p>The media query will only apply if the media type is screen and the viewport is 480px wide or wider.</p>
 </body>
 </html>
+<!-- CSS2 Introduced Media Types
+The @media rule, introduced in CSS2, made it possible to define different style rules for different media types.
+Examples: You could have one set of style rules for computer screens, one for printers, one for handheld devices, one for television-type devices, and so on.
+Unfortunately these media types never got a lot of support by devices, other than the print media type.
+CSS3 Introduced Media Queries:
+Media queries in CSS3 extended the CSS2 media types idea: Instead of looking for a type of device, they look at the capability of the device.
+Media queries can be used to check many things, such as:
+1.width and height of the viewport
+2.width and height of the device
+3.orientation (is the tablet/phone in landscape or portrait mode?)
+4.resolution
+Using media queries are a popular technique for delivering a tailored style sheet to desktops, laptops, tablets, and mobile phones (such as iPhone and Android phones). -->
+<!--
+Media Query Syntax
+A media query consists of a media type and can contain one or more expressions, which resolve to either true or false.
+Syntax:
+@media not|only mediatype and (expressions) {
+  CSS-Code;
+}
+The result of the query is true if the specified media type matches the type of device the document is being displayed on and all expressions in the media query are true. When a media query is true, the corresponding style sheet or style rules are applied, following the normal cascading rules.
+Unless you use the not or only operators, the media type is optional and the all type will be implied.
+You can also have different stylesheets for different media:
+<link rel="stylesheet" media="mediatype and|not|only (expressions)" href="print.css"> -->
+<!--
+CSS3 Media Types
+Value	Description
+all	Used for all media type devices
+print	Used for printers
+screen	Used for computer screens, tablets, smart-phones etc.
+speech	Used for screenreaders that "reads" the page out loud -->
+<!-- Change the background color of the <body> element to "lightblue" when the browser window is 600px wide or less:
+    @media only screen and (max-width: 600px) {
+      body {
+        background-color: lightblue;
+      }
+    } -->
+<!--
+meaning of the not, only and and keywords:
+1.not: The not keyword inverts the meaning of an entire media query.
+2.only: The only keyword prevents older browsers that do not support media queries with media features from applying the specified styles. It has no effect on modern browsers.
+3.and: The and keyword combines a media feature with a media type or other media features.
+They are all optional. However, if you use not or only, you must also specify a media type. -->
