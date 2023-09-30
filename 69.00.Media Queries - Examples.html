@@ -40,5 +40,61 @@
 <!--
 Media queries are a popular technique for delivering a tailored style sheet to different devices. To demonstrate a
 simple example, we can change the background color for different devices. -->
-<!-- 
+<!--
 Do you wonder why we use exactly 992px and 600px? They are what we call "typical breakpoints" for devices. You can read more about typical breakpoints in our Responsive Web Design Tutorial. -->
+<!--
+Media Queries For Menus
+In this example, we use media queries to create a responsive navigation menu, that varies in design on different screen sizes. -->
+<!-- Media Queries For Columns
+A common use of media queries, is to create a flexible layout. In this example, we create a layout that varies between four, two and full-width columns, depending on different screen sizes -->
+<!-- Tip: A more modern way of creating column layouts, is to use CSS Flexbox (see example below). However, it is not supported in Internet Explorer 10 and earlier versions. If you require IE6-10 support, use floats (as shown above). -->
+<!--
+Hide Elements With Media Queries:
+Another common use of media queries, is to hide elements on different screen sizes:
+/* If the screen size is 600px wide or less, hide the element */
+@media screen and (max-width: 600px) {
+  div.example {
+    display: none;
+  }
+}
+-->
+<!--
+Flexible Image Gallery
+In this example, we use media queries together with flexbox to create a responsive image gallery -->
+<!--
+Flexible Website
+In this example, we use media queries together with flexbox to create a responsive website, containing a flexible navigation bar and flexible content. -->
+<!--
+Orientation: Portrait / Landscape:
+Media queries can also be used to change layout of a page depending on the orientation of the browser.
+You can have a set of CSS properties that will only apply when the browser window is wider than its height, a so called "Landscape" orientation:
+Use a lightblue background color if the orientation is in landscape mode:
+@media only screen and (orientation: landscape) {
+  body {
+    background-color: lightblue;
+  }
+} -->
+<!--
+Min Width to Max Width
+You can also use the (max-width: ..) and (min-width: ..) values to set a minimum width and a maximum width.
+For example, when the browser's width is between 600 and 900px, change the appearance of a <div> element:
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  div.example {
+    font-size: 50px;
+    padding: 50px;
+    border: 8px solid black;
+    background: yellow;
+  }
+} -->
+<!--
+Using an additional value: In the example below, we add an additional media query to our already existing one using a comma (this will behave like an OR operator):
+Example
+/* When the width is between 600px and 900px OR above 1100px - change the appearance of <div> */
+@media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px) {
+  div.example {
+    font-size: 50px;
+    padding: 50px;
+    border: 8px solid black;
+    background: yellow;
+  }
+} -->
